@@ -60,9 +60,10 @@
         "network",
         "coaching",
         "credential",
-        "departmental"
+        "departmental",
+        "postdoc"
       ],
-      "description": "fellowship: a selective, multi-year cohort program. institute: an in-person or live workshop or institute. course: an online or blended course. webinars: a series of live webinars. network: a semester-long mentoring network or community of practice. coaching: one-on-one or small-group coaching or mentoring. credential: training that leads to a certificate. departmental: a workshop brought to a department or campus."
+      "description": "fellowship: a selective, multi-year cohort program. institute: an in-person or live workshop or institute. course: an online or blended course. webinars: a series of live webinars. network: a semester-long mentoring network or community of practice. coaching: one-on-one or small-group coaching or mentoring. credential: training that leads to a certificate. departmental: a workshop brought to a department or campus. postdoc: a postdoctoral or pre-faculty fellowship that combines research with mentored college teaching."
     },
     "audiences": {
       "type": "array",

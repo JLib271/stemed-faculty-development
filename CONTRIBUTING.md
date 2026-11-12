@@ -24,7 +24,7 @@ name: Workshop for Early Career Geoscience Faculty
 providers: [National Association of Geoscience Teachers]
 sponsor_type: US society               # US society | International society | US federal agency | Federally funded program | Private foundation or nonprofit
 funding_note: Supported by NAGT and the National Science Foundation.
-type: institute                        # fellowship | institute | course | webinars | network | coaching | credential | departmental
+type: institute                        # fellowship | institute | course | webinars | network | coaching | credential | departmental | postdoc
 audiences: [Faculty and instructors]   # and/or Graduate students and postdocs
 career: [New or early-career]          # leave out if open to any stage; also Mid-career and beyond | Leaders and chairs
 disciplines: [Earth Science]           # leave out for programs open to all STEM+ fields

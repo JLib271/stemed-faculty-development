@@ -23,7 +23,9 @@ the [STEMEd+ Digest](https://jlib271.github.io/STEMEd-Digest/), the
   Project or the Kern Family Foundation's KEEN workshops). The program must be open to people from many
   institutions. **If we are not sure, we leave it out.**
 - **What kinds.** Fellowships and cohort programs, workshops and institutes, online courses, webinar series,
-  mentoring networks, coaching, certificate programs, and workshops brought to your department.
+  mentoring networks, coaching, certificate programs, workshops brought to your department, and teaching
+  postdocs and teaching fellowships (such as NIH IRACDA and the Consortium for Faculty Diversity). Teaching-focused
+  job postings are on [STEMEd+ Jobs](https://jlib271.github.io/stemed-jobs/teaching-jobs.html).
 - **What it shows.** Who it is for, career stage, cost and support, credit, format, how often it runs, and when
   applications open and close. Programs open for applications are listed first.
 

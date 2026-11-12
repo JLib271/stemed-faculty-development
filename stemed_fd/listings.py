@@ -28,6 +28,7 @@ TYPE_LABELS = {
     "coaching": "Coaching or mentoring",
     "credential": "Certificate program",
     "departmental": "Workshop for your department or campus",
+    "postdoc": "Teaching postdoc or teaching fellowship",
 }
 COST_LABELS = {
     "free": "Free",

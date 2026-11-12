@@ -102,6 +102,7 @@
     <p id="tagline"></p>
     <div class="links">
       <a class="btn" href="#open-now" id="openbtn">Open for applications</a>
+      <a class="btn secondary" href="#type=postdoc" id="postdocbtn">Teaching postdocs</a>
       <a class="btn secondary" href="#calendar">Deadline calendar</a>
       <a class="btn secondary" href="feeds/new.xml">New listings (RSS)</a>
       <a class="btn secondary" id="suggest" href="#">Suggest a program</a>
@@ -109,7 +110,7 @@
     <div class="scope" role="note" id="scope">
       <p><strong>What is listed:</strong> national programs on teaching and learning for college and university faculty and instructors (including lecturers, adjuncts, and two-year college faculty) and for graduate students and postdocs preparing to teach. Each is run by a national society or association, a US federal agency, a national program with federal agency funds, or a national private foundation or nonprofit, and is open to people from many institutions.</p>
       <p><strong>Not included:</strong> programs a single campus runs for its own people (such as your teaching center's workshops or a campus's own summer institute), state and regional programs (such as MAA section NExT programs), and programs run by companies. Ask your campus teaching and learning center about local programs.</p>
-      <p>Looking for teaching conferences such as BCCE, USCOTS, SABER, or the ASEE Annual Conference? See <a href="https://jlib271.github.io/stemed-conferences/">STEMEd+ Conferences</a>. For K-12 teachers and informal educators, see <a href="https://jlib271.github.io/stemed-professional-learning/">STEMEd+ Professional Learning</a>.</p>
+      <p>Looking for teaching conferences such as BCCE, USCOTS, SABER, or the ASEE Annual Conference? See <a href="https://jlib271.github.io/stemed-conferences/">STEMEd+ Conferences</a>. For K-12 teachers and informal educators, see <a href="https://jlib271.github.io/stemed-professional-learning/">STEMEd+ Professional Learning</a>. Looking for a teaching-focused job (teaching professor, lecturer, instructor, two-year college, or teaching postdoc)? See the <a href="https://jlib271.github.io/stemed-jobs/teaching-jobs.html">Teaching-Focused jobs on STEMEd+ Jobs</a>.</p>
     </div>
   </div>
 </header>
@@ -360,6 +361,7 @@
     fill(el('stype'), d.sponsor_types);
     readHash();
     el('openbtn').addEventListener('click', function () { el('open').checked = true; changed(); });
+    el('postdocbtn').addEventListener('click', function (e) { e.preventDefault(); el('type').value = 'postdoc'; changed(); el('open-now').scrollIntoView(); });
     ['suggest', 'suggest2'].forEach(function (id) { el(id).href = issueUrl('suggest_program.yml'); ext(el(id)); });
     el('update').href = issueUrl('update_program.yml'); ext(el('update'));
     el('mail').href = 'mailto:' + MAINTAINER + '?subject=' + encodeURIComponent('STEMEd+ Faculty Development: new or corrected listing') +
