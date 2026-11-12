@@ -1,0 +1,15 @@
+name: QUBES Faculty Mentoring Networks
+short: QUBES FMNs
+providers: [QUBES, BioQUEST Curriculum Consortium]
+sponsor_type: Federally funded program
+funding_note: QUBES has been supported by the National Science Foundation; partners such as the Ecological Society of America co-host networks.
+type: network
+audiences: [Faculty and instructors]
+disciplines: [Bioscience]
+format: online
+cost: free
+url: https://qubeshub.org/
+frequency: twice a year
+schedule: Semester-long online networks start most spring and fall terms; groups meet every two weeks.
+summary: Small online groups of faculty, led by expert mentors, who adapt and teach a shared set of quantitative biology or data-rich teaching materials together over a semester.
+checked: 2026-11-12

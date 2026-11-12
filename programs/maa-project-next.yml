@@ -1,0 +1,23 @@
+name: MAA Project NExT
+providers: [Mathematical Association of America]
+sponsor_type: US society
+type: fellowship
+audiences: [Faculty and instructors, Graduate students and postdocs]
+career: [New or early-career]
+disciplines: [Mathematics]
+format: hybrid
+cost: varies
+cost_note: The applicant's chair or dean commits travel funds for three national meetings; sponsors support some Fellows.
+url: https://maa.org/node/387610
+frequency: annual
+schedule: Applications are open each year from February 1 to April 15, with decisions on June 1; Fellows meet at MathFest and the Joint Mathematics Meetings over a year.
+summary: A year-long program for new PhDs in the mathematical sciences in their first years of college teaching (including postdocs), with workshops at three national meetings, a mentor, and an online network.
+checked: 2026-11-12
+offerings:
+  - name: 2027-28 Fellows
+    url: https://maa.org/node/387610
+    dates_source: announced
+    note: MAA opens the application around February 1 each year.
+    deadlines:
+      - {label: Applications open, date: 2027-02-01, kind: opens}
+      - {label: Applications due, date: 2027-04-15, kind: application}

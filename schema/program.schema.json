@@ -1,0 +1,265 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "STEMEd+ Faculty Development: a program",
+  "description": "One national professional development program on teaching and learning for college and university faculty and instructors, or for graduate students and postdocs preparing to teach, with any announced sessions or application rounds. One file per program in programs/. List only programs run by a national scholarly or professional society or association (US or international), by a US federal agency, by a national program funded by a US federal agency, or by a national private foundation or nonprofit, and open to people from many institutions. Programs run by a single campus for its own people, regional or state programs, and programs run by companies are not listed. Conferences belong on STEMEd+ Conferences. If you are not sure a program meets this rule, leave it out.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "name",
+    "providers",
+    "sponsor_type",
+    "type",
+    "audiences",
+    "url",
+    "frequency",
+    "schedule",
+    "cost",
+    "summary",
+    "checked"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 3,
+      "description": "Program name as the provider gives it."
+    },
+    "short": {
+      "type": "string",
+      "description": "Short name or acronym."
+    },
+    "providers": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 2
+      },
+      "description": "The societies, associations, or agencies that run or fund it."
+    },
+    "sponsor_type": {
+      "enum": [
+        "US society",
+        "International society",
+        "US federal agency",
+        "Federally funded program",
+        "Private foundation or nonprofit"
+      ],
+      "description": "US society: a national US scholarly or professional society or association. International society: one organized internationally. US federal agency: run by NSF, NIH, NASA, or another US agency. Federally funded program: a national program run by another organization with US federal funding (say how in funding_note). Private foundation or nonprofit: a national program run or funded by a private foundation or nonprofit (not a company), open to people from many institutions."
+    },
+    "funding_note": {
+      "type": "string",
+      "description": "Which agency supports it and how."
+    },
+    "type": {
+      "enum": [
+        "fellowship",
+        "institute",
+        "course",
+        "webinars",
+        "network",
+        "coaching",
+        "credential",
+        "departmental"
+      ],
+      "description": "fellowship: a selective, multi-year cohort program. institute: an in-person or live workshop or institute. course: an online or blended course. webinars: a series of live webinars. network: a semester-long mentoring network or community of practice. coaching: one-on-one or small-group coaching or mentoring. credential: training that leads to a certificate. departmental: a workshop brought to a department or campus."
+    },
+    "audiences": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "Faculty and instructors",
+          "Graduate students and postdocs"
+        ]
+      },
+      "description": "Faculty and instructors: anyone teaching college or university courses, including lecturers, adjuncts, two-year college faculty, and teaching-focused staff. Graduate students and postdocs: those preparing for or starting college teaching."
+    },
+    "disciplines": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      },
+      "description": "Labels from the STEMEd+ discipline list (stemed_fd/stemedplus_disciplines.json, kept in HuMeta). Leave empty for programs open to all STEM+ fields. Computer science is listed under Engineering; statistics under Mathematics."
+    },
+    "format": {
+      "enum": [
+        "in person",
+        "online",
+        "hybrid",
+        "varies"
+      ]
+    },
+    "cost": {
+      "enum": [
+        "free",
+        "stipend",
+        "members",
+        "fee",
+        "varies"
+      ],
+      "description": "free: no cost to participants. stipend: no cost, and participants are paid or have travel covered. members: free for members of the society. fee: participants or their schools pay. varies: depends on the session or host."
+    },
+    "cost_note": {
+      "type": "string",
+      "description": "Amounts, what is covered, or member prices, in a sentence."
+    },
+    "credit": {
+      "type": "string",
+      "description": "Graduate credit, certificates of hours, or certification, in a sentence."
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://",
+      "description": "The provider's page for the program."
+    },
+    "frequency": {
+      "enum": [
+        "annual",
+        "twice a year",
+        "several times a year",
+        "ongoing",
+        "irregular"
+      ]
+    },
+    "status": {
+      "enum": [
+        "active",
+        "paused"
+      ],
+      "default": "active",
+      "description": "paused: the provider says it is not running now."
+    },
+    "status_note": {
+      "type": "string",
+      "description": "Why it is paused and when the provider expects news."
+    },
+    "schedule": {
+      "type": "string",
+      "minLength": 5,
+      "description": "When it usually happens and when applications are usually due, in a sentence."
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 400,
+      "description": "Who it is for and what participants do, in your own words."
+    },
+    "checked": {
+      "type": "string",
+      "format": "date",
+      "description": "When someone last checked this file against the provider's pages."
+    },
+    "notes": {
+      "type": "string",
+      "description": "Notes for maintainers; not shown on the site."
+    },
+    "offerings": {
+      "type": "array",
+      "description": "Announced sessions, cohorts, or application rounds. Past ones may stay; the site hides them once every date has passed.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "url",
+          "dates_source"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 3,
+            "description": "e.g. 2027 field season, Summer 2027 bootcamp."
+          },
+          "start": {
+            "type": "string",
+            "format": "date"
+          },
+          "end": {
+            "type": "string",
+            "format": "date"
+          },
+          "location": {
+            "type": "string",
+            "description": "City and state, 'Online', or 'Many sites'."
+          },
+          "format": {
+            "enum": [
+              "in person",
+              "online",
+              "hybrid",
+              "varies"
+            ]
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "dates_source": {
+            "enum": [
+              "official",
+              "announced"
+            ],
+            "description": "official: the dates are on the provider's own page for this offering. announced: the provider gave a month or season, or a partner announced it."
+          },
+          "note": {
+            "type": "string"
+          },
+          "deadlines": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "label",
+                "date"
+              ],
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "description": "e.g. Applications open, Applications due, Registration closes."
+                },
+                "date": {
+                  "type": "string",
+                  "format": "date"
+                },
+                "kind": {
+                  "enum": [
+                    "opens",
+                    "application",
+                    "registration",
+                    "other"
+                  ],
+                  "default": "other"
+                },
+                "note": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "career": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "New or early-career",
+          "Mid-career and beyond",
+          "Leaders and chairs"
+        ]
+      },
+      "description": "Career stages it is designed for. Leave empty if it is open to any stage."
+    },
+    "institutions": {
+      "type": "string",
+      "description": "Which institutions or departments can take part, if limited (e.g. two-year colleges, member institutions, US institutions)."
+    }
+  }
+}

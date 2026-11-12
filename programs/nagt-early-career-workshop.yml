@@ -1,0 +1,26 @@
+name: Workshop for Early Career Geoscience Faculty
+providers: [National Association of Geoscience Teachers]
+sponsor_type: US society
+funding_note: Supported by NAGT and the National Science Foundation.
+type: institute
+audiences: [Faculty and instructors]
+career: [New or early-career]
+disciplines: [Earth Science]
+format: in person
+cost: fee
+cost_note: The 2026 fee was $1,800 including lodging, some meals, and NAGT membership; stipends are available by application.
+url: https://serc.carleton.edu/NAGTWorkshops/earlycareer2027/index.html
+frequency: annual
+schedule: Five days each June at Macalester College in Saint Paul, Minnesota; applications are due in March.
+summary: For faculty in their first three years in the Earth, atmospheric, ocean, and environmental sciences, on teaching strategies, course design, research, and managing an academic career.
+checked: 2026-11-12
+offerings:
+  - name: 2027 workshop
+    start: 2027-06-20
+    end: 2027-06-24
+    location: Macalester College, Saint Paul, Minnesota
+    format: in person
+    url: https://serc.carleton.edu/NAGTWorkshops/earlycareer2027/index.html
+    dates_source: official
+    deadlines:
+      - {label: Applications due, date: 2027-03-15, kind: application}

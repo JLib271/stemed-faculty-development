@@ -1,0 +1,16 @@
+name: Correct a listing or add new dates
+description: A new deadline or session, a cost, a link, or another detail that is wrong or out of date.
+title: "Update: "
+labels: ["update program"]
+body:
+  - type: input
+    id: listing
+    attributes: {label: "Which program?", description: "Program name, or the file in programs/ if you know it."}
+    validations: {required: true}
+  - type: textarea
+    id: change
+    attributes: {label: "What should change?", description: "For a new session or application round, include dates, place, and deadlines."}
+    validations: {required: true}
+  - type: input
+    id: source
+    attributes: {label: "Where did you see the correct information?", description: "Ideally a link to the provider's own page."}

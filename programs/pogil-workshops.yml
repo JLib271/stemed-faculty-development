@@ -1,0 +1,20 @@
+name: POGIL Workshops
+providers: [The POGIL Project]
+sponsor_type: Private foundation or nonprofit
+type: institute
+audiences: [Faculty and instructors]
+format: varies
+cost: fee
+cost_note: Registration fees vary; scholarships are available for some workshops.
+url: https://pogil.org/workshops-events/workshops
+frequency: ongoing
+schedule: Virtual and in-person workshops through the year, three-day summer workshops (July 7-9, 2026 at Franklin & Marshall College), and an evening eSeries.
+summary: Hands-on workshops on Process Oriented Guided Inquiry Learning, a team-based active learning method used in chemistry, biology, computer science, and other courses, for college and high school instructors.
+checked: 2026-11-12
+offerings:
+  - name: POGIL eSeries - POGIL Refresher
+    start: 2027-03-17
+    location: Online
+    format: online
+    url: https://events.pogil.org/event-6834802
+    dates_source: official

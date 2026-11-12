@@ -1,0 +1,27 @@
+name: NAGT Traveling Workshops Program
+providers: [National Association of Geoscience Teachers]
+sponsor_type: US society
+type: departmental
+audiences: [Faculty and instructors, Graduate students and postdocs]
+career: [Leaders and chairs]
+disciplines: [Earth Science]
+format: varies
+cost: fee
+cost_note: The host department or institution pays workshop costs to NAGT.
+institutions: Departments, programs, campuses, or regional groups apply together.
+url: https://nagt.org/nagt/profdev/twp/index.html
+frequency: ongoing
+schedule: Applications are due October 15 for spring workshops, January 15 for summer workshops, and March 15 for fall workshops.
+summary: Brings national leaders in geoscience and environmental science education to your department or region to strengthen courses and programs, support diverse students, and prepare graduate teaching assistants.
+checked: 2026-11-12
+offerings:
+  - name: Summer 2027 workshops
+    url: https://nagt.org/nagt/profdev/twp/index.html
+    dates_source: official
+    deadlines:
+      - {label: Requests due for summer workshops, date: 2027-01-15, kind: application}
+  - name: Fall 2027 workshops
+    url: https://nagt.org/nagt/profdev/twp/index.html
+    dates_source: official
+    deadlines:
+      - {label: Requests due for fall workshops, date: 2027-03-15, kind: application}

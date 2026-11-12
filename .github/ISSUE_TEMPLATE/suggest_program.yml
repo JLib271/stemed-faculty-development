@@ -1,0 +1,64 @@
+name: Suggest a program
+description: National teaching professional development for college faculty, instructors, graduate students, or postdocs.
+title: "Add: "
+labels: ["add program"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! We list national professional development in teaching and learning for college and university
+        faculty and instructors, and for graduate students and postdocs preparing to teach, in STEM+ fields. It
+        must be run by a national society or association, a US federal agency, a national program a federal agency
+        funds, or a national private foundation or nonprofit, and be open to people from many institutions.
+        **Programs a single campus runs for its own people are not listed**, and neither are state or regional
+        programs, company programs, or conferences. A maintainer checks the provider's pages before listing it.
+  - type: input
+    id: name
+    attributes: {label: "Program name", placeholder: "e.g. MAA Project NExT"}
+    validations: {required: true}
+  - type: input
+    id: provider
+    attributes: {label: "Society, agency, foundation, or nonprofit that runs or funds it", placeholder: "e.g. Mathematical Association of America"}
+    validations: {required: true}
+  - type: dropdown
+    id: sponsor_type
+    attributes:
+      label: Run or funded by
+      options: ["US society", "International society", "US federal agency", "Federally funded program", "Private foundation or nonprofit"]
+    validations: {required: true}
+  - type: input
+    id: url
+    attributes: {label: "Link to the provider's own page about the program", description: "This is how we check who runs it."}
+    validations: {required: true}
+  - type: checkboxes
+    id: audiences
+    attributes:
+      label: Who it is for
+      options:
+        - label: Faculty and instructors (including lecturers, adjuncts, and two-year college faculty)
+        - label: Graduate students and postdocs
+  - type: input
+    id: career
+    attributes: {label: "Career stage, if limited", placeholder: "e.g. first three years of a faculty position; department chairs"}
+  - type: dropdown
+    id: type
+    attributes:
+      label: Kind of program
+      options: ["Fellowship or cohort program", "Workshop or institute", "Online course", "Webinar series", "Mentoring network or community of practice", "Coaching or mentoring", "Certificate program", "Workshop for your department or campus"]
+    validations: {required: true}
+  - type: input
+    id: cost
+    attributes: {label: "Cost, stipend, or support", placeholder: "e.g. free, $1,800 including lodging, travel covered"}
+  - type: input
+    id: deadline
+    attributes: {label: "Next application deadline, if announced", placeholder: "YYYY-MM-DD, or 'usually in March'"}
+  - type: input
+    id: schedule
+    attributes: {label: "When it runs", placeholder: "e.g. five days every June; semester-long online"}
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Scope check
+      options:
+        - label: It is open to people from many institutions (not only one campus), and the organization named above runs or funds it, as its own pages show.
+          required: true

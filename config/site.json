@@ -1,0 +1,45 @@
+{
+  "title": "STEMEd+ Faculty Development",
+  "tagline": "Professional development in teaching and learning for college and university faculty, instructors, graduate students, and postdocs across STEM+ fields: workshops, institutes, fellowships, online courses, and mentoring networks from national societies, federal programs, and national foundations, with deadlines in one place. Campus-only programs are not included.",
+  "repo_url": "https://github.com/JLib271/stemed-faculty-development",
+  "site_url": "https://jlib271.github.io/stemed-faculty-development/",
+  "commons_home": "https://stemedplus.hcommons.org/",
+  "related": [
+    {
+      "name": "STEMEd+ Conferences",
+      "url": "https://jlib271.github.io/stemed-conferences/",
+      "about": "meetings, proposal deadlines, and travel support, including NSTA, NCTM, and other teacher conferences"
+    },
+    {
+      "name": "STEMEd+ Professional Learning",
+      "url": "https://jlib271.github.io/stemed-professional-learning/",
+      "about": "national programs for K-12 teachers and informal educators"
+    },
+    {
+      "name": "STEMEd+ Digest",
+      "url": "https://jlib271.github.io/STEMEd-Digest/",
+      "about": "new journal articles, preprints, and dissertations"
+    },
+    {
+      "name": "STEMEd+ Funding",
+      "url": "https://jlib271.github.io/stemed-funding/",
+      "about": "open calls and deadlines for STEM+ education funding"
+    },
+    {
+      "name": "STEM+ Education Research Graduate Programs",
+      "url": "https://jlib271.github.io/stem-ed-research-programs/",
+      "about": "where to study STEM+ education research"
+    },
+    {
+      "name": "STEMEd+ Jobs",
+      "url": "https://jlib271.github.io/stemed-jobs/",
+      "about": "positions in STEM+ education"
+    },
+    {
+      "name": "Find Collaborators",
+      "url": "https://stemedplus.org/stemed-collaborators/",
+      "about": "researchers and educators who want to work together"
+    }
+  ],
+  "feed_size": 100
+}

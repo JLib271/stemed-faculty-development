@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>STEMEd+ Faculty Development</title>
+<meta name="description" content="National professional development in teaching for college and university faculty, instructors, graduate students, and postdocs across STEM+ fields, from societies, federal programs, and national foundations, with application deadlines. Campus-only programs are not included.">
+<link rel="alternate" type="application/rss+xml" title="Newly listed programs" href="feeds/new.xml">
+<style>
+  :root { --ink:#1d2433; --muted:#5b6475; --line:#dde2ea; --bg:#f7f8fa; --card:#fff; --accent:#1f5f8b; --soft:#e6f0f7; --softline:#c9dcea;
+          --soon:#a3261b; --soonbg:#fdecea; --mid:#7a4f00; --midbg:#fdf3dc; --ok:#1f6b3a; --okbg:#e7f4ec; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--ink); background: var(--bg); }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+  .stemedplus { display: inline-block; margin: 0 0 8px; } .stemedplus img { display: block; height: 48px; width: auto; }
+  header { background: var(--card); border-bottom: 1px solid var(--line); }
+  header .wrap { padding-top: 26px; padding-bottom: 20px; }
+  h1 { font-size: 1.7rem; margin: 0 0 6px; letter-spacing: -0.01em; }
+  header p { margin: 0; color: var(--muted); max-width: 72ch; }
+  .links { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .btn { display: inline-block; padding: 8px 14px; border-radius: 6px; background: var(--accent); color: #fff; font-weight: 600; text-decoration: none; }
+  .btn.secondary { background: var(--card); color: var(--accent); border: 1px solid var(--accent); }
+  a { color: var(--accent); }
+  .soon { background: var(--soft); border-bottom: 1px solid var(--softline); }
+  .soon .wrap { padding-top: 18px; padding-bottom: 18px; }
+  .soon h2 { font-size: 1.05rem; margin: 0 0 10px; }
+  .strip { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; }
+  .strip .c { background: var(--card); border: 1px solid var(--softline); border-radius: 8px; padding: 12px 14px; font-size: .92rem; display: flex; flex-direction: column; }
+  .strip .c .due { font-size: .82rem; font-weight: 700; color: var(--mid); background: var(--midbg); border-radius: 999px; padding: 2px 10px; align-self: flex-start; margin-bottom: 8px; }
+  .strip .c .t { font-weight: 700; text-decoration: none; font-size: 1rem; } .strip .c .t:hover { text-decoration: underline; }
+  .strip .c .m { color: var(--muted); font-size: .84rem; margin-top: 3px; }
+  .strip .c .tags { margin-top: 8px; }
+  .strip .c .acts { margin-top: auto; padding-top: 10px; font-size: .84rem; gap: 12px; }
+  .controls { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 20px 0 8px; }
+  .controls .search { grid-column: span 2; }
+  label { display: block; font-size: .8rem; font-weight: 600; color: var(--muted); margin-bottom: 4px; }
+  input, select { width: 100%; padding: 9px 10px; font: inherit; border: 1px solid var(--line); border-radius: 6px; background: var(--card); color: var(--ink); }
+  input[type=checkbox] { width: auto; margin: 0 6px 0 0; }
+  .check { display: flex; align-items: end; padding-bottom: 9px; } .check label { display: flex; align-items: center; margin: 0; font-size: .92rem; color: var(--ink); font-weight: 500; }
+  input:focus, select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .bar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; margin: 6px 0 12px; }
+  #count { color: var(--muted); font-size: .9rem; margin: 0; }
+  button.link { font: inherit; font-size: .9rem; background: none; border: 0; color: var(--accent); cursor: pointer; padding: 0; text-decoration: underline; }
+  h2.sec { font-size: 1.15rem; margin: 26px 0 10px; }
+  ol.list { list-style: none; margin: 0; padding: 0; }
+  ol.list li { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; margin-bottom: 8px; }
+  .t { font-weight: 600; font-size: 1.04rem; text-decoration: none; } .t:hover { text-decoration: underline; }
+  .meta { color: var(--muted); font-size: .88rem; margin-top: 2px; }
+  .due { display: inline-block; margin-top: 8px; font-size: .88rem; font-weight: 600; padding: 3px 10px; border-radius: 6px; background: #eef0f3; }
+  .due.soon { background: var(--soonbg); color: var(--soon); } .due.mid { background: var(--midbg); color: var(--mid); } .due.ok { background: var(--okbg); color: var(--ok); }
+  .note { color: var(--muted); font-size: .85rem; margin-top: 4px; }
+  .sum { margin: 8px 0 0; font-size: .94rem; }
+  ul.dl { margin: 8px 0 0; padding-left: 18px; font-size: .9rem; }
+  ul.dl li { background: none; border: 0; padding: 0; margin: 0; border-radius: 0; }
+  ul.dl .past { color: var(--muted); }
+  dl.facts { display: grid; grid-template-columns: max-content 1fr; gap: 2px 12px; margin: 8px 0 0; font-size: .9rem; }
+  dl.facts dt { color: var(--muted); font-weight: 600; } dl.facts dd { margin: 0; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; align-items: center; }
+  .tag { font-size: .75rem; padding: 2px 8px; border-radius: 999px; background: #eef0f3; color: var(--ink); font-weight: 600; }
+  .tag.st { background: var(--soft); color: var(--accent); }
+  .tag.warn { background: var(--midbg); color: var(--mid); }
+  .tag.k { background: #fff; border: 1px solid var(--line); color: var(--muted); font-weight: 500; }
+  .acts { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 10px; font-size: .88rem; }
+  .acts a { color: var(--accent); }
+  .more { text-align: center; margin: 14px 0 10px; }
+  .more button { font: inherit; padding: 8px 16px; border-radius: 6px; border: 1px solid var(--accent); background: var(--card); color: var(--accent); cursor: pointer; }
+  .empty { padding: 26px; text-align: center; color: var(--muted); }
+  .disclaimer { font-size: .85rem; color: var(--muted); margin: 0 0 10px; }
+  footer { background: var(--card); border-top: 1px solid var(--line); padding: 20px 0 30px; font-size: .9rem; color: var(--muted); margin-top: 30px; }
+  footer h2 { font-size: 1rem; color: var(--ink); margin: 18px 0 6px; } footer h2:first-child { margin-top: 0; }
+  footer ul { margin: 6px 0 12px; padding-left: 18px; }
+  footer details { margin: 0 0 12px; } footer summary { cursor: pointer; color: var(--accent); }
+  code { background: #eef0f3; padding: 1px 5px; border-radius: 4px; font-size: .85em; word-break: break-all; }
+  .vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  @media (max-width: 860px) { .controls { grid-template-columns: 1fr 1fr; } .controls .search { grid-column: 1 / -1; } }
+  .join { background: #e6f0f7; border: 1px solid #c9dcea; border-radius: 8px; padding: 10px 14px; font-size: .93rem; color: #1d2433; }
+  .join p { margin: 4px 0; }
+  .join-top { margin: 14px 0 0; }
+  .join-bottom { margin: 0 0 16px; }
+</style>
+<style>
+  .scope { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 8px; padding: 12px 16px; margin: 14px 0 0; font-size: .93rem; }
+  header .scope p { margin: 4px 0; max-width: none; color: var(--ink); }
+  .scope strong { color: var(--ink); }
+  .due.open { background: var(--soonbg); color: var(--soon); }
+  .due.opens { background: var(--okbg); color: var(--ok); }
+  .due.paused { background: #eef0f3; color: var(--muted); }
+  .due.ongoing { background: var(--soft); color: var(--accent); }
+  .tag.paused { background: #eef0f3; color: var(--muted); border: 1px dashed var(--muted); }
+  .tag.aud { background: #f3ece6; color: #7a3a1c; }
+  ul.off { margin: 8px 0 0; padding-left: 18px; font-size: .9rem; }
+  ul.off li { background: none; border: 0; padding: 0; margin: 0 0 4px; border-radius: 0; }
+  ul.off .past { color: var(--muted); }
+</style>
+<link rel="stylesheet" href="stemedplus-theme.css">
+</head>
+<body>
+<div class="sp-bar"><div class="sp-in"><a class="sp-logo" href="https://stemedplus.org/"><img src="stemedplus-commons-logo-white.png" alt="STEMEd+ Commons home" width="263" height="91"></a><input type="checkbox" id="sp-menu-toggle" class="sp-toggle"><label for="sp-menu-toggle" class="sp-burger"><span class="sp-burger-icon" aria-hidden="true"></span>Menu</label><nav class="sp-nav" aria-label="STEMEd+ Commons"><ul class="sp-top"><li class="sp-has"><a href="https://stemedplus.org/stemed-features/">Features</a><svg class="sp-chev" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 4L6 8L10.5 4" stroke="currentColor" stroke-width="1.5"/></svg><ul class="sp-sub"><li><a href="https://works.hcommons.org/collections/stemedplus/records?q=&amp;l=list&amp;p=1&amp;s=10&amp;sort=newest">STEMEd+ Library</a></li><li><a href="https://stemedplus.org/sites/">STEMEd+ Sites</a></li><li><a href="https://stemedplus.profile.hcommons.org/members/">STEMEd+ Members</a></li><li><a href="https://stemedplus.org/stemed-groups/">STEMEd+ Groups</a></li></ul></li><li class="sp-has sp-here"><a href="https://stemedplus.org/stemed-resources/">Resources</a><svg class="sp-chev" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 4L6 8L10.5 4" stroke="currentColor" stroke-width="1.5"/></svg><ul class="sp-sub"><li><a href="https://theseekershub.stemedplus.org/">The Seekers’ Hub: A Job Board</a></li><li><a href="https://stemedplus.org/stemed-collaborators/">Find Collaborators</a></li><li><a href="https://jlib271.github.io/stemed-funding/">Find Funding</a></li><li><a href="https://jlib271.github.io/STEMEd-Digest/">STEMEd+ Digest</a></li><li><a href="https://jlib271.github.io/stem-ed-research-programs/">STEMEd+ Graduate Programs</a></li><li><a href="https://jlib271.github.io/stemed-conferences/">STEMEd+ Conferences</a></li><li><a href="https://jlib271.github.io/stemed-professional-learning/">STEMEd+ Professional Learning</a></li><li><a href="https://jlib271.github.io/stemed-faculty-development/" aria-current="page">STEMEd+ Faculty Development</a></li></ul></li><li class="sp-has"><a href="https://stemedplus.org/about/">Learn More</a><svg class="sp-chev" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 4L6 8L10.5 4" stroke="currentColor" stroke-width="1.5"/></svg><ul class="sp-sub"><li><a href="https://stemedplus.org/about/">About</a></li><li><a href="https://stemedplus.org/learn-more/">Governance</a></li><li><a href="https://stemedplus.org/vision-research/">Vision &amp; Research</a></li><li><a href="https://support.hcommons.org/">Help &amp; Support</a></li></ul></li><li><a href="https://stemedplus.org/collaborate/">Partner with Us</a></li><li><a href="https://stemedplus.org/contact-us/">Contact Us</a></li><li><a href="https://stemedplus.org/join-stemed/">Join STEMEd+</a></li><li><a href="https://stemedplus.org/stemed-commons-frequently-asked-questions/">Get Started &amp; FAQs</a></li></ul></nav><a class="sp-login" href="https://stemedplus.org/wp-login.php">Log in</a></div></div>
+<header>
+  <div class="wrap">
+    <h1 id="title">STEMEd+ Faculty Development</h1>
+    <p id="tagline"></p>
+    <div class="links">
+      <a class="btn" href="#open-now" id="openbtn">Open for applications</a>
+      <a class="btn secondary" href="#calendar">Deadline calendar</a>
+      <a class="btn secondary" href="feeds/new.xml">New listings (RSS)</a>
+      <a class="btn secondary" id="suggest" href="#">Suggest a program</a>
+    </div>
+    <div class="scope" role="note" id="scope">
+      <p><strong>What is listed:</strong> national programs on teaching and learning for college and university faculty and instructors (including lecturers, adjuncts, and two-year college faculty) and for graduate students and postdocs preparing to teach. Each is run by a national society or association, a US federal agency, a national program a federal agency funds, or a national private foundation or nonprofit, and is open to people from many institutions.</p>
+      <p><strong>Not included:</strong> programs a single campus runs for its own people (such as your teaching center's workshops or a campus's own summer institute), state and regional programs (such as MAA section NExT programs), and programs run by companies. Ask your campus teaching and learning center about local programs.</p>
+      <p>Looking for teaching conferences such as BCCE, USCOTS, SABER, or the ASEE Annual Conference? See <a href="https://jlib271.github.io/stemed-conferences/">STEMEd+ Conferences</a>. For K-12 teachers and informal educators, see <a href="https://jlib271.github.io/stemed-professional-learning/">STEMEd+ Professional Learning</a>.</p>
+    </div>
+  </div>
+</header>
+<div class="wrap"><div class="join join-top" role="note"><p><strong>STEMEd+ Faculty Development is part of STEMEd+ Commons.</strong> Join free to deposit instruments in the <a href="https://works.hcommons.org/collections/humetainstrumentlibrary/" target="_blank" rel="noopener noreferrer">HuMeta Instrument Library collection<span class="vh"> (opens in a new tab)</span></a>, share your work in the <a href="https://works.hcommons.org/collections/stemedplus/" target="_blank" rel="noopener noreferrer">STEMEd+ collection<span class="vh"> (opens in a new tab)</span></a>, follow new work, and connect with STEM+ education researchers. You can sign in with GitHub, Google, ORCID, or your institution.</p><p><a href="https://stemedplus.hcommons.org/" target="_blank" rel="noopener noreferrer">Visit STEMEd+ Commons<span class="vh"> (opens in a new tab)</span></a> · <a href="https://support.hcommons.org/profiles/login-and-registration/" target="_blank" rel="noopener noreferrer">How to join<span class="vh"> (opens in a new tab)</span></a></p></div></div></div>
+<section class="soon" aria-labelledby="soon-h">
+  <div class="wrap">
+    <h2 id="soon-h">Applications opening or closing in the next 60 days</h2>
+    <div id="strip" class="strip"></div>
+  </div>
+</section>
+<main class="wrap">
+  <div class="controls" role="search">
+    <div class="search"><label for="q">Search</label><input id="q" type="search" placeholder="Program, society, agency, or topic" autocomplete="off"></div>
+    <div><label for="audience">I am</label><select id="audience"><option value="">Anyone</option></select></div>
+    <div><label for="career">Career stage</label><select id="career"><option value="">Any stage</option></select></div>
+    <div><label for="discipline">Discipline</label><select id="discipline"><option value="">All</option></select></div>
+    <div><label for="type">Kind of program</label><select id="type"><option value="">All</option></select></div>
+    <div><label for="cost">Cost</label><select id="cost"><option value="">Any</option></select></div>
+    <div><label for="stype">Run or funded by</label><select id="stype"><option value="">All</option></select></div>
+    <div><label for="format">Format</label><select id="format">
+      <option value="">Any</option><option value="online">Online or hybrid</option><option value="in person">In person</option>
+    </select></div>
+    <div class="check"><label><input id="open" type="checkbox"> Open for applications now</label></div>
+  </div>
+  <div class="bar">
+    <p id="count" aria-live="polite"></p>
+    <button type="button" class="link" id="share">Copy link to this view</button>
+  </div>
+  <p class="disclaimer">Dates, costs, and deadlines change. Always confirm on the provider's own page before you apply or register.</p>
+  <h2 class="sec" id="open-now">Programs</h2>
+  <ol id="list" class="list"></ol>
+  <div class="more"><button id="more" type="button" hidden>Show more</button></div>
+</main>
+<footer>
+  <div class="wrap">
+    <h2 id="calendar">Deadline calendar</h2>
+    <p>Subscribe in Google Calendar, Outlook, or Apple Calendar (choose "add calendar from URL") to see when applications open and close:</p>
+    <p><code id="deadlinesics"></code> <button type="button" class="link" data-copy="deadlinesics">Copy</button></p>
+    <p>Programs with a listed deadline also have an "Add to calendar" link for just that deadline.</p>
+    <h2>What is listed</h2>
+    <p>Professional development in teaching and learning for college and university faculty, instructors, graduate students, and postdocs in STEM+ fields: fellowships and cohort programs, workshops and institutes, online courses, webinar series, mentoring networks, coaching, certificate programs, and workshops brought to your department. Each program is run by a national scholarly or professional society or association, a US federal agency, a national program funded by a US federal agency, or a national private foundation or nonprofit, and is open to people from many institutions. If we are not sure a program meets that rule, it is not listed. Each file is checked against the provider's own pages on the date shown.</p>
+    <p><strong>Programs a single campus runs for its own people are not included</strong>, and neither are state or regional programs (such as MAA section NExT programs or a university's regional summer institute) or programs run by companies. Teaching conferences are on STEMEd+ Conferences.</p>
+    <p>Disciplines use the same categories as STEMEd+ Jobs, Funding, Conferences, the STEMEd+ Digest, and the Graduate Programs list; computer science is under Engineering and statistics under Mathematics. Programs open to all STEM+ fields appear under every discipline, and programs open to any career stage appear under every stage.</p>
+    <h2>Add or correct a listing</h2>
+    <p>Know a national program we are missing, or see something out of date? <a id="suggest2" href="#">Suggest a program</a> or <a id="update" href="#">report a correction</a> on GitHub, or <a id="mail" href="#">email the maintainer</a>.</p>
+    <h2>RSS</h2>
+    <p><a href="feeds/new.xml">Newly listed programs</a>, for feed readers.</p>
+    <div class="join join-bottom" role="note"><p><strong>STEMEd+ Faculty Development is part of STEMEd+ Commons.</strong> Join free to deposit instruments in the <a href="https://works.hcommons.org/collections/humetainstrumentlibrary/" target="_blank" rel="noopener noreferrer">HuMeta Instrument Library collection<span class="vh"> (opens in a new tab)</span></a>, share your work in the <a href="https://works.hcommons.org/collections/stemedplus/" target="_blank" rel="noopener noreferrer">STEMEd+ collection<span class="vh"> (opens in a new tab)</span></a>, follow new work, and connect with STEM+ education researchers. You can sign in with GitHub, Google, ORCID, or your institution.</p><p><a href="https://stemedplus.hcommons.org/" target="_blank" rel="noopener noreferrer">Visit STEMEd+ Commons<span class="vh"> (opens in a new tab)</span></a> · <a href="https://support.hcommons.org/profiles/login-and-registration/" target="_blank" rel="noopener noreferrer">How to join<span class="vh"> (opens in a new tab)</span></a></p></div></div>
+    <h2><a id="morehead" href="https://stemedplus.hcommons.org/">More from STEMEd+ Commons</a></h2>
+    <ul id="related"></ul>
+    <details id="reviewbox" hidden><summary id="reviewsum">For maintainers</summary><ul id="reviewlist"></ul></details>
+    <p><a id="repo" href="#">About this site</a> · <span id="updated"></span></p>
+  </div>
+</footer>
+<script>
+(function () {
+  'use strict';
+  var MAINTAINER = 'libarkin@msu.edu';
+  var PAGE = 40, state = { d: null, shown: PAGE };
+  var MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  function el(id) { return document.getElementById(id); }
+  function node(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+  function ext(a) { a.target = '_blank'; a.rel = 'noopener noreferrer'; a.appendChild(node('span', 'vh', ' (opens in a new tab)')); return a; }
+  function link(href, text, cls) { var a = node('a', cls, text); a.href = href; return ext(a); }
+  function fill(sel, values, labels) { values.forEach(function (v, i) { var o = node('option', '', labels ? labels[i] : v); o.value = v; sel.appendChild(o); }); }
+  function pretty(iso) { if (!iso) return ''; var p = iso.split('-'); return MONTHS[+p[1] - 1] + ' ' + (+p[2]) + ', ' + p[0]; }
+  function span(o) {
+    if (!o.start) return '';
+    if (!o.end || o.start === o.end) return pretty(o.start);
+    var s = o.start.split('-'), e = o.end.split('-');
+    if (s[0] === e[0] && s[1] === e[1]) return MONTHS[+s[1] - 1] + ' ' + (+s[2]) + '–' + (+e[2]) + ', ' + s[0];
+    if (s[0] === e[0]) return MONTHS[+s[1] - 1] + ' ' + (+s[2]) + ' – ' + MONTHS[+e[1] - 1] + ' ' + (+e[2]) + ', ' + s[0];
+    return pretty(o.start) + ' – ' + pretty(o.end);
+  }
+  function daysUntil(iso) { var t = new Date(state.d.today + 'T00:00:00Z'), d = new Date(iso + 'T00:00:00Z'); return Math.round((d - t) / 864e5); }
+  function inDays(iso) { var n = daysUntil(iso); return n <= 0 ? 'today' : n === 1 ? 'tomorrow' : n < 60 ? 'in ' + n + ' days' : 'in ' + Math.round(n / 30.4) + ' months'; }
+  function providersText(p) { return p.providers.join(' and '); }
+  function audienceText(p) { return p.audiences.length > 1 ? 'Faculty, instructors, graduate students, and postdocs' : p.audiences[0]; }
+
+  // Upcoming deadlines that matter (opens, application, registration), soonest first, with their offering.
+  function upcoming(p) {
+    var out = [];
+    p.offerings.forEach(function (o) { o.deadlines.forEach(function (d) { if (!d.passed && d.kind !== 'other') out.push({ o: o, d: d }); }); });
+    return out.sort(function (a, b) { return a.d.date < b.d.date ? -1 : a.d.date > b.d.date ? 1 : 0; });
+  }
+
+  function statusBadge(p) {
+    var b = node('span', 'due'), next = upcoming(p), closing;
+    if (p.status === 'paused') { b.textContent = 'Paused'; b.className += ' paused'; return b; }
+    closing = next.filter(function (x) { return x.d.kind !== 'opens'; })[0];
+    if (p.open && closing) { b.textContent = 'Open now · ' + closing.d.label.toLowerCase() + ' ' + pretty(closing.d.date) + ' (' + inDays(closing.d.date) + ')'; b.className += ' open'; return b; }
+    if (next.length) { b.textContent = next[0].d.label + ' ' + (next[0].o.dates_source === 'announced' ? 'about ' : '') + pretty(next[0].d.date) + ' (' + inDays(next[0].d.date) + ')'; b.className += ' opens'; return b; }
+    b.textContent = p.frequency === 'ongoing' ? 'Ongoing' : p.frequency === 'annual' ? 'Offered every year' : p.frequency === 'twice a year' ? 'Offered twice a year' : p.frequency === 'several times a year' ? 'Offered several times a year' : 'Offered from time to time';
+    b.className += ' ongoing';
+    return b;
+  }
+
+  function icsFor(p, o, d) {
+    var e = new Date(d.date + 'T00:00:00Z'); e.setUTCDate(e.getUTCDate() + 1);
+    function esc(s) { return s.replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,'); }
+    var lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//STEMEd+//Faculty Development//EN', 'BEGIN:VEVENT',
+      'UID:' + o.id.replace(/:/g, '-') + '-' + d.date + '@stemed-faculty-development', 'DTSTAMP:' + state.d.generated.replace(/[-:]/g, ''),
+      'DTSTART;VALUE=DATE:' + d.date.replace(/-/g, ''), 'DTEND;VALUE=DATE:' + e.toISOString().slice(0, 10).replace(/-/g, ''),
+      'SUMMARY:' + esc(d.label + ': ' + p.name), 'DESCRIPTION:' + esc(providersText(p) + '. Confirm on the provider\'s page: ' + o.url),
+      'URL:' + o.url, 'END:VEVENT', 'END:VCALENDAR'];
+    return 'data:text/calendar;charset=utf-8,' + encodeURIComponent(lines.join('\r\n'));
+  }
+  function calLink(p, o, d) { var a = node('a', '', 'Add to calendar'); a.href = icsFor(p, o, d); a.download = o.id.replace(/:/g, '-') + '-' + d.date + '.ics'; return a; }
+
+  function matches(p) {
+    var q = el('q').value.trim().toLowerCase(), aud = el('audience').value, cr = el('career').value, dsc = el('discipline').value,
+        ty = el('type').value, co = el('cost').value, st = el('stype').value, fm = el('format').value;
+    var text = [p.name, p.short, providersText(p), p.summary, p.schedule, p.funding_note, p.disciplines.join(' ')].join(' ').toLowerCase();
+    if (q && text.indexOf(q) === -1) return false;
+    if (aud && p.audiences.indexOf(aud) === -1) return false;
+    if (cr && p.career.length && p.career.indexOf(cr) === -1) return false;
+    if (dsc && !p.all_fields && p.disciplines.indexOf(dsc) === -1) return false;
+    if (ty && p.type !== ty) return false;
+    if (co && p.cost !== co) return false;
+    if (st && p.sponsor_type !== st) return false;
+    if (fm === 'online' && ['online', 'hybrid', 'varies'].indexOf(p.format) === -1) return false;
+    if (fm === 'in person' && ['in person', 'hybrid', 'varies'].indexOf(p.format) === -1) return false;
+    if (el('open').checked && !p.open) return false;
+    return true;
+  }
+
+  function tags(p) {
+    var t = node('div', 'tags');
+    t.appendChild(node('span', 'tag st', state.d.types[p.type]));
+    p.audiences.forEach(function (a) { t.appendChild(node('span', 'tag aud', a)); });
+    if (p.all_fields) t.appendChild(node('span', 'tag', 'All STEM+ fields'));
+    else p.disciplines.forEach(function (d) { t.appendChild(node('span', 'tag', d === 'Engineering' && /comput/i.test(p.name + p.summary) ? 'Engineering (computer science)' : d)); });
+    t.appendChild(node('span', 'tag k', p.sponsor_type));
+    t.appendChild(node('span', 'tag k', state.d.costs[p.cost]));
+    if (p.status === 'paused') t.appendChild(node('span', 'tag paused', 'Paused'));
+    return t;
+  }
+
+  function offerings(p) {
+    if (!p.offerings.length) return null;
+    var ul = node('ul', 'off');
+    p.offerings.forEach(function (o) {
+      var li = node('li'), head = o.name, where = [span(o), o.location].filter(Boolean).join(', ');
+      if (where) head += ': ' + where;
+      if (o.dates_source === 'announced') head += ' (announced; confirm on the provider\'s page)';
+      li.appendChild(document.createTextNode(head));
+      if (o.deadlines.length) {
+        var dl = node('ul', 'dl');
+        o.deadlines.forEach(function (d) {
+          dl.appendChild(node('li', d.passed ? 'past' : '', d.label + ': ' + pretty(d.date) + (d.passed ? ' (passed)' : '') + (d.note ? '. ' + d.note : '')));
+        });
+        li.appendChild(dl);
+      }
+      if (o.note) li.appendChild(node('div', 'note', o.note));
+      ul.appendChild(li);
+    });
+    return ul;
+  }
+
+  function card(p) {
+    var li = document.createElement('li');
+    li.appendChild(link(p.url, p.name, 't'));
+    li.appendChild(node('div', 'meta', providersText(p) + ' · for ' + audienceText(p).toLowerCase()));
+    li.appendChild(statusBadge(p));
+    if (p.status === 'paused') li.appendChild(node('div', 'note', p.status_note));
+    li.appendChild(node('div', 'note', p.schedule));
+    li.appendChild(node('p', 'sum', p.summary));
+    var off = offerings(p); if (off) li.appendChild(off);
+    var dl = node('dl', 'facts');
+    function fact(term, val) { if (!val) return; dl.appendChild(node('dt', '', term)); dl.appendChild(node('dd', '', val)); }
+    fact('Cost', state.d.costs[p.cost] + (p.cost_note ? '. ' + p.cost_note : ''));
+    fact('Career stage', p.career.length ? p.career.join(', ') : 'Any');
+    fact('Who can take part', p.institutions);
+    fact('Format', p.format === 'varies' ? 'Varies (online and in person)' : p.format.charAt(0).toUpperCase() + p.format.slice(1));
+    fact('Credit', p.credit);
+    fact('Funding', p.funding_note);
+    fact('Last checked', pretty(p.checked));
+    li.appendChild(dl);
+    li.appendChild(tags(p));
+    var acts = node('div', 'acts');
+    acts.appendChild(link(p.url, 'Program page'));
+    var next = upcoming(p)[0];
+    if (next) { if (next.o.url !== p.url) acts.appendChild(link(next.o.url, 'Application page')); acts.appendChild(calLink(p, next.o, next.d)); }
+    acts.appendChild(link(updateUrl(p.name, p.file), 'Report a correction'));
+    li.appendChild(acts);
+    return li;
+  }
+
+  function render() {
+    var items = state.d.programs.filter(matches), list = el('list');
+    list.innerHTML = '';
+    var open = items.filter(function (p) { return p.open; }).length;
+    el('count').textContent = items.length + (items.length === 1 ? ' program' : ' programs') + (open ? ', ' + open + ' open for applications now' : '');
+    if (!items.length) list.appendChild(node('li', 'empty', 'No programs match. Try clearing a filter.'));
+    items.slice(0, state.shown).forEach(function (p) { list.appendChild(card(p)); });
+    el('more').hidden = items.length <= state.shown;
+  }
+
+  var IDS = ['q', 'audience', 'career', 'discipline', 'type', 'cost', 'stype', 'format', 'open'];
+  function val(e) { return e.type === 'checkbox' ? (e.checked ? '1' : '') : e.value; }
+  function viewHash() { return IDS.map(function (id) { var v = val(el(id)); return v ? id + '=' + encodeURIComponent(v) : null; }).filter(Boolean).join('&'); }
+  function readHash() {
+    location.hash.replace(/^#/, '').split('&').forEach(function (p) {
+      var kv = p.split('='); if (IDS.indexOf(kv[0]) === -1 || kv.length !== 2) return;
+      var e = el(kv[0]), v = decodeURIComponent(kv[1]);
+      if (e.type === 'checkbox') e.checked = v === '1'; else e.value = v;
+    });
+  }
+  function changed() { state.shown = PAGE; var h = viewHash(); history.replaceState(null, '', h ? '#' + h : location.pathname + location.search); render(); }
+
+  function strip() {
+    var box = el('strip'), soon = [];
+    state.d.programs.forEach(function (p) { upcoming(p).forEach(function (x) { if (daysUntil(x.d.date) <= 60) soon.push({ p: p, o: x.o, d: x.d }); }); });
+    soon.sort(function (a, b) { return a.d.date < b.d.date ? -1 : a.d.date > b.d.date ? 1 : 0; });
+    if (!soon.length) { box.appendChild(node('p', '', 'No listed application dates in the next 60 days. Many programs below are ongoing.')); return; }
+    soon.slice(0, 8).forEach(function (x) {
+      var p = x.p, o = x.o, d = x.d, left = daysUntil(d.date);
+      var c = node('div', 'c');
+      c.appendChild(node('div', 'due', d.label + ': ' + pretty(d.date) + (left <= 0 ? ' (today)' : left === 1 ? ' (tomorrow)' : ' (' + left + ' days)')));
+      c.appendChild(link(o.url, p.name, 't'));
+      c.appendChild(node('div', 'm', providersText(p) + ' · for ' + audienceText(p).toLowerCase()));
+      c.appendChild(node('div', 'm', o.name + ([span(o), o.location].filter(Boolean).length ? ': ' + [span(o), o.location].filter(Boolean).join(', ') : '')));
+      c.appendChild(node('div', 'm', state.d.costs[p.cost] + (p.cost_note ? '. ' + p.cost_note : '')));
+      if (d.note) c.appendChild(node('div', 'm', d.note));
+      c.appendChild(tags(p));
+      var acts = node('div', 'acts');
+      acts.appendChild(link(o.url, 'Application page'));
+      if (o.url !== p.url) acts.appendChild(link(p.url, 'About the program'));
+      acts.appendChild(calLink(p, o, d));
+      acts.appendChild(link(updateUrl(p.name, p.file), 'Report a correction'));
+      c.appendChild(acts);
+      box.appendChild(c);
+    });
+  }
+
+  function issueUrl(template, title) { return state.d.site.repo_url + '/issues/new?template=' + template + (title ? '&title=' + encodeURIComponent(title) : ''); }
+  function updateUrl(name, file) { return issueUrl('update_program.yml', 'Update: ' + name) + '&listing=' + encodeURIComponent(name + ' (' + file + ')'); }
+
+  function init(d) {
+    state.d = d;
+    var site = d.site;
+    document.title = site.title; el('title').textContent = site.title; el('tagline').textContent = site.tagline;
+    fill(el('audience'), d.audiences, d.audiences.map(function (a) { return a === 'Faculty and instructors' ? 'Faculty or an instructor' : 'A graduate student or postdoc'; }));
+    fill(el('career'), d.career);
+    fill(el('discipline'), d.disciplines, d.disciplines.map(function (x) { return x === 'Engineering' ? 'Engineering (including computer science)' : x; }));
+    var types = Object.keys(d.types); fill(el('type'), types, types.map(function (k) { return d.types[k]; }));
+    var costs = Object.keys(d.costs); fill(el('cost'), costs, costs.map(function (k) { return d.costs[k]; }));
+    fill(el('stype'), d.sponsor_types);
+    readHash();
+    el('openbtn').addEventListener('click', function () { el('open').checked = true; changed(); });
+    ['suggest', 'suggest2'].forEach(function (id) { el(id).href = issueUrl('suggest_program.yml'); ext(el(id)); });
+    el('update').href = issueUrl('update_program.yml'); ext(el('update'));
+    el('mail').href = 'mailto:' + MAINTAINER + '?subject=' + encodeURIComponent('STEMEd+ Faculty Development: new or corrected listing') +
+      '&body=' + encodeURIComponent('Program name:\nNational society, agency, foundation, or nonprofit that runs or funds it:\nLink to the program page:\nWho it is for (faculty, instructors, graduate students, postdocs; career stage):\nNext application deadline (if known):\nCost or stipend:\nCorrection (if this is about an existing listing):\n');
+    el('repo').href = site.repo_url; ext(el('repo'));
+    el('morehead').href = site.commons_home; ext(el('morehead'));
+    el('deadlinesics').textContent = new URL('feeds/deadlines.ics', location.href).href;
+    Array.prototype.forEach.call(document.querySelectorAll('[data-copy]'), function (b) {
+      b.addEventListener('click', function () { navigator.clipboard && navigator.clipboard.writeText(el(b.getAttribute('data-copy')).textContent); b.textContent = 'Copied'; });
+    });
+    site.related.forEach(function (r) { var li = document.createElement('li'); li.appendChild(link(r.url, r.name)); li.appendChild(document.createTextNode(': ' + r.about)); el('related').appendChild(li); });
+    if (d.review.length) {
+      el('reviewbox').hidden = false; el('reviewsum').textContent = 'For maintainers: ' + d.review.length + ' listing(s) to re-check';
+      d.review.forEach(function (r) { el('reviewlist').appendChild(node('li', '', r.title + ' (' + r.file + '): ' + r.why.join('; '))); });
+    }
+    el('updated').textContent = 'Updated ' + pretty(d.generated.slice(0, 10)) + '.';
+    strip();
+    IDS.forEach(function (id) { el(id).addEventListener(el(id).type === 'checkbox' ? 'change' : 'input', changed); });
+    el('more').addEventListener('click', function () { state.shown += PAGE; render(); });
+    el('share').addEventListener('click', function () { navigator.clipboard && navigator.clipboard.writeText(location.href); el('share').textContent = 'Link copied'; });
+    render();
+  }
+
+  fetch('programs.json', { cache: 'no-cache' }).then(function (r) { return r.json(); }).then(init).catch(function () {
+    el('list').appendChild(node('li', 'empty', 'The listings could not be loaded. Please try again later.'));
+  });
+})();
+</script>
+</body>
+</html>
