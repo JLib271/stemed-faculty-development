@@ -8,7 +8,7 @@ The full list of fields, with descriptions, is in `schema/program.schema.json`.
 1. **Check it is open to people from many institutions.** A program a single campus runs for its own faculty,
    graduate students, or postdocs is not listed, and neither are state or regional programs (such as MAA section
    NExT programs).
-2. **Check who runs it.** A national society or association, a US federal agency, a national program a federal
+2. **Check who runs it.** A national society or association, a US federal agency, a national program with federal
    agency funds, or a national private foundation or nonprofit must be named on its own website as running or
    funding the program. For a "Federally funded program", say which agency in `funding_note`.
 3. **Check who it is for.** College and university faculty and instructors, or graduate students and postdocs

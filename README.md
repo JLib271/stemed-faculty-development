@@ -18,7 +18,7 @@ the [STEMEd+ Digest](https://jlib271.github.io/STEMEd-Digest/), the
   two-year college faculty; and graduate students and postdocs preparing to teach. Each listing says which
   career stages it is designed for.
 - **Who runs it.** Only programs run by a national scholarly or professional society or association (in the US
-  or internationally), by a US federal agency, by a national program a federal agency funds (for example, NSF-supported
+  or internationally), by a US federal agency, by a national program with federal agency funds (for example, NSF-supported
   QUBES Faculty Mentoring Networks), or by a national private foundation or nonprofit (for example, The POGIL
   Project or the Kern Family Foundation's KEEN workshops). The program must be open to people from many
   institutions. **If we are not sure, we leave it out.**
