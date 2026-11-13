@@ -46,8 +46,8 @@ national nonprofit sponsor. MAA OPEN Math online workshops: their NSF grant was 
 and we could not confirm 2026 workshops. The Cottrell Scholars Collaborative New Faculty Workshop: we could not
 confirm recent offerings.
 
-Disciplines come from the list shared across STEMEd+ Commons, kept in [HuMeta](https://github.com/JLib271/HuMeta)
-(`standard/humeta/stemedplus_disciplines.json`). Computer science is listed under Engineering and statistics under
+Disciplines come from the list shared across STEMEd+ Commons, kept in the [HuMeta profile](https://github.com/JLib271/humeta-profile)
+(`stemedplus_disciplines.json`). Computer science is listed under Engineering and statistics under
 Mathematics, as on the other sites.
 
 ## Feeds and calendars
