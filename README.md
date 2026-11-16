@@ -8,9 +8,8 @@ STEMEd+ Faculty Development is part of [STEMEd+ Commons](https://stemedplus.hcom
 [STEMEd+ Professional Learning](https://jlib271.github.io/stemed-professional-learning/) (for K-12 teachers and
 informal educators), [STEMEd+ Conferences](https://jlib271.github.io/stemed-conferences/),
 [STEMEd+ Funding](https://jlib271.github.io/stemed-funding/), [STEMEd+ Jobs](https://jlib271.github.io/stemed-jobs/),
-the [STEMEd+ Digest](https://jlib271.github.io/STEMEd-Digest/), the
-[Graduate Programs](https://jlib271.github.io/stem-ed-research-programs/) list, and
-[Find Collaborators](https://stemedplus.org/stemed-collaborators/).
+the [STEMEd+ Digest](https://jlib271.github.io/STEMEd-Digest/), and the
+[Graduate Programs](https://jlib271.github.io/stem-ed-research-programs/) list.
 
 ## What is listed
 
